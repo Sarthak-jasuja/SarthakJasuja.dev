@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import pdfFile from './assets/SarthakJasujaSWE.pdf';
 import { 
   Github, 
   Linkedin, 
@@ -70,7 +71,7 @@ const RESUME_DATA = {
       subtitle: "GenAI Drawing Generator",
       description: "A modern looking AI-powered drawing generator that transforms drawing prompts into unique artwork using generative models. Features a sleek interface for easy creation and sharing of AI-generated images.",
       tags: ["GenAI", "Drawing", "Collaboration", "Productivity"],
-      link: "https://trip-mate-travel-itinerary-planner-tan.vercel.app"
+      link: "https://syntrix-tau.vercel.app"
     }
   ],
   education: [
@@ -450,17 +451,12 @@ const Hero = ({ setPage }) => {
             View Projects
           </button>
           
-          <button 
-            onClick={() => setPage('contact')}
-            className="hero-btn px-8 py-4 bg-transparent border border-neutral-500 text-white font-bold rounded-full cursor-pointer hover:bg-neutral-800 hover:border-neutral-300 transition-all flex items-center gap-2"
-          >
-            Contact Me <ChevronRight size={18} />
-          </button>
+          
 
            <a 
-            href="#" 
-            download="Sarthak_Jasuja_Resume.pdf"
-            className="hero-btn px-8 py-4 bg-neutral-900 text-white font-bold rounded-full cursor-pointer hover:bg-neutral-800 transition-all flex items-center gap-2 border border-neutral-700 hover:border-orange-500/50"
+            href={pdfFile} 
+            download="SarthakJasujaSWE.pdf"
+            className="hero-btn px-6 py-3 bg-neutral-900 text-white font-bold rounded-full cursor-pointer hover:bg-neutral-800 transition-all flex items-center gap-2 border border-neutral-700 hover:border-orange-500/50"
             title="Download Resume"
           >
             <Download size={18} /> Resume
