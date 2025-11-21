@@ -40,7 +40,7 @@ const RESUME_DATA = {
     email: "sarthakjasuja@gmail.com",
     linkedin: "linkedin.com/in/sarthak-jasuja", 
     github: "github.com/Sarthak-jasuja",
-    X: "@sarthak_jasuja"
+    X: "x.com/sarthak_jasuja"
   },
   skills: [
     { category: "Languages", items: ["JavaScript", "TypeScript", "Python", "C++", "Swift"] },
@@ -456,7 +456,7 @@ const Hero = ({ setPage }) => {
            <a 
             href={pdfFile} 
             download="SarthakJasujaSWE.pdf"
-            className="hero-btn px-6 py-3 bg-neutral-900 text-white font-bold rounded-full cursor-pointer hover:bg-neutral-800 transition-all flex items-center gap-2 border border-neutral-700 hover:border-orange-500/50"
+            className="hero-btn px-8 py-4 bg-neutral-900 text-white font-bold rounded-full cursor-pointer hover:bg-neutral-800 transition-all flex items-center gap-2 border border-neutral-700 hover:border-orange-500/50"
             title="Download Resume"
           >
             <Download size={18} /> Resume
@@ -924,7 +924,7 @@ const App = () => {
                  {/* Footer */}
                  <footer className="py-12 bg-neutral-950 text-center border-t border-neutral-900">
                     <div className="flex justify-center gap-8 mb-8">
-                       <a href={`https://${RESUME_DATA.socials.twitter}`} className="text-neutral-500 hover:text-white hover:scale-110 transition-all"><Twitter size={24} /></a>
+                       <a href={`https://${RESUME_DATA.socials.X}`} className="text-neutral-500 hover:text-white hover:scale-110 transition-all"><Twitter size={24} /></a>
                        <a href={`https://${RESUME_DATA.socials.linkedin}`} className="text-neutral-500 hover:text-white hover:scale-110 transition-all"><Linkedin size={24} /></a>
                        <a href={`https://${RESUME_DATA.socials.github}`} className="text-neutral-500 hover:text-white hover:scale-110 transition-all"><Github size={24} /></a>
                     </div>
